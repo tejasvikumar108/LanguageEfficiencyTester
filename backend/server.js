@@ -1185,9 +1185,9 @@ mongoose.connect("mongodb://127.0.0.1:27017/FluencyTracker", { useNewUrlParser: 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 const userSchema = new mongoose.Schema({
-    name: String,
-    username: String,
-    password: String
+    name: {type:String,required:true},
+    username: {type:String,required:true},
+    password: {type:String,required:true}
 });
 const Users = mongoose.model('Users', userSchema, 'Users');
 app.post("/register", async (req, res) => {

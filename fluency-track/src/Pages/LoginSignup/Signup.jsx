@@ -40,6 +40,7 @@ const Signup = () => {
     // }
 
     const [successMessage, setSuccessMessage] = useState('');
+    
     // const history = useHistory();
     const PostData = async (e) => {
         e.preventDefault();
@@ -76,17 +77,17 @@ const Signup = () => {
                     <div className="form-group">
                         {/* <label htmlFor="name">Name:</label> */}
                         <input type="text" id="name" name="name" placeholder='Your Name' value={user.name}
-                        onChange={handleInputs}/>
+                        onChange={handleInputs} required/>
                     </div>
                     <div className="form-group">
                         {/* <label htmlFor="email">Email:</label> */}
                         <input type="text" id="username" name="username" placeholder='Your Username' value={user.username}
-                        onChange={handleInputs}/>
+                        onChange={handleInputs} required/>
                     </div>
                     <div className="form-group">
                         {/* <label htmlFor="password">Password:</label> */}
                         <input type="password" id="password" name="password" placeholder='Your Password' value={user.password}
-                        onChange={handleInputs}/>
+                        onChange={handleInputs} required/>
                     </div>
                     <button type="submit" onClick={PostData}>Sign Up</button>
                     <Link to="/login" ><button style={{marginLeft:"21px"}}>Login</button></Link>

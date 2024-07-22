@@ -14,8 +14,8 @@ const Footer = () => {
                     <ul class="list-unstyled">
                         <li><h4 class="connect-at">Connect At</h4></li> 
                         <li><h6>Address :- Paschim Vihar, Nangloi, New Delhi</h6></li>
-                        <li><h6>Email :- manasvikumar108@gmail.com</h6></li>
-                        <li><h6>Contact :- 9873577551</h6></li>
+                        <li><h6>Email :- tejasvikumar108@gmail.com</h6></li>
+                        <li><h6>Contact :- 9999140314</h6></li>
                     </ul>
                 </div>
                 <div class="col-md-3 " style={{textAlign:"center"}}>
